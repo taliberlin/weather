@@ -5,9 +5,9 @@ import "./SearchBar.css";
 export default function SearchBar() {
   return (
     <div className="SearchBar">
-      <form>
-        <input type="text" placeholder="Enter a city..." />
-        <input type="submit" value="Search" />
+      <form className="text-center">
+        <input className="search" type="text" placeholder="Enter a city..." />
+        <input className="submit" type="submit" value="Search" />
       </form>
       <WeatherInfo />
     </div>

@@ -4,12 +4,12 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header>Weather</header>
+    <div className="App container">
+      <header className="text-center">Weather</header>
       <body>
         <SearchBar />
       </body>
-      <footer>
+      <footer className="text-center mt-3">
         This website was coded by Tali Berlin using React and is open-sourced on
         GitHub
       </footer>

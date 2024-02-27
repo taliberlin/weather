@@ -4,19 +4,24 @@ import "./WeatherInfo.css";
 export default function WeatherInfo() {
   return (
     <div className="WeatherInfo">
-      <div className="container">
+      <div className="container grid">
         <div className="row">
-          <div className="col">icon</div>
-          <div className="col">3</div>
-          <div className="col">°C | °F</div>
-          <div className="col">
-            <ul>
-              <li>Precipitation: 0%</li>
-              <li>Humidity: 46%</li>
-              <li>Wind: 27 km/h</li>
-            </ul>
+          <div className="col temp-precip-humid-wind">
+            <span className="icon">
+              {" "}
+              <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" />{" "}
+            </span>
+            <span className="current-temp">3</span>
+            <span className="degree-unit">°C | °F </span>
+            <span className="weather-data">
+              <ul>
+                <li>Precipitation: 0%</li>
+                <li>Humidity: 46%</li>
+                <li>Wind: 27 km/h</li>
+              </ul>
+            </span>
           </div>
-          <div className="col">
+          <div className="location-time-description col">
             <ul>
               <li>Vancouver</li>
               <li>Monday, 2:00pm</li>

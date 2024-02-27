@@ -1,0 +1,13 @@
+.WeatherInfo .grid {
+  grid-template-columns: 1fr 2fr;
+}
+.WeatherInfo .temp-precip-humid-wind {
+  display: flex;
+}
+.WeatherInfo ul {
+  padding: 0;
+  margin: 0;
+}
+.WeatherInfo li {
+  list-style: none;
+}

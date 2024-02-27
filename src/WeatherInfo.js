@@ -6,10 +6,13 @@ export default function WeatherInfo() {
     <div className="WeatherInfo">
       <div className="container grid">
         <div className="row">
-          <div className="col temp-precip-humid-wind">
-            <span className="icon">
+          <div className="col-md temp-precip-humid-wind">
+            <span>
               {" "}
-              <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" />{" "}
+              <img
+                className="icon img-fluid"
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+              />{" "}
             </span>
             <span className="current-temp">3</span>
             <span className="degree-unit">°C | °F </span>
@@ -21,9 +24,9 @@ export default function WeatherInfo() {
               </ul>
             </span>
           </div>
-          <div className="location-time-description col">
+          <div className="location-time-description col-md">
             <ul>
-              <li>Vancouver</li>
+              <li className="city">Vancouver</li>
               <li>Monday, 2:00pm</li>
               <li>Sunny</li>
             </ul>

@@ -1,8 +1,25 @@
 .WeatherInfo .grid {
-  grid-template-columns: 1fr 2fr;
+  max-width: 95%;
 }
 .WeatherInfo .temp-precip-humid-wind {
   display: flex;
+}
+.WeatherInfo .current-temp {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.WeatherInfo .degree-unit {
+  font-size: 18px;
+  line-height: 2;
+}
+.WeatherInfo .weather-data {
+  font-size: 12px;
+  margin-left: 18px;
+  line-height: 1.6;
+  position: relative;
+  top: 4px;
 }
 .WeatherInfo ul {
   padding: 0;
@@ -10,4 +27,16 @@
 }
 .WeatherInfo li {
   list-style: none;
+}
+.WeatherInfo .location-time-description {
+  text-align: end;
+  font-size: 15px;
+  position: relative;
+  bottom: 2px;
+  line-height: 1.3;
+}
+.WeatherInfo .city {
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 3px;
 }

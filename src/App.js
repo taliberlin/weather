@@ -6,9 +6,9 @@ function App() {
   return (
     <div className="App container">
       <header className="text-center">Weather</header>
-      <body>
+      <main>
         <SearchBar />
-      </body>
+      </main>
       <footer className="text-center mt-3">
         This website was coded by Tali Berlin using React and is open-sourced on
         GitHub

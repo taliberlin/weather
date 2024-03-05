@@ -6,3 +6,9 @@
   margin-top: 60px;
   margin-bottom: 28px;
 }
+.App footer {
+  font-size: 12px;
+}
+.App a {
+  text-decoration: none;
+}

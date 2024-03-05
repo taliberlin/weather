@@ -8,8 +8,8 @@ export default function Forecast() {
         <div className="forecast-day">Mon</div>
         <img
           className="forecast-icon img-fluid"
-          src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-          alt="Sunny Icon"
+          src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+          alt="Partially Cloudy Icon"
         />
         <div className="high-low">
           <span className="high">4°</span>

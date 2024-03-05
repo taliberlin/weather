@@ -12,6 +12,7 @@ export default function WeatherInfo() {
               <img
                 className="icon img-fluid"
                 src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                alt="Sunny Icon"
               />{" "}
             </span>
             <span className="current-temp">3</span>

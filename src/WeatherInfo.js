@@ -17,7 +17,7 @@ export default function WeatherInfo() {
               />{" "}
             </span>
             <span className="current-temp">3</span>
-            <span className="degree-unit">°C | °F </span>
+            <span className="degree-unit">°C</span>
             <span className="weather-data">
               <ul>
                 <li>Precipitation: 0%</li>

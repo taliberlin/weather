@@ -1,8 +1,20 @@
 import React from "react";
 import "./WeatherInfo.css";
 import Forecast from "./Forecast.js";
+import moment from "moment";
 
-export default function WeatherInfo() {
+export default function WeatherInfo(props) {
+  let city = props.weatherData.city;
+  let conditions = props.weatherData.conditions;
+  let iconUrl = props.weatherData.iconUrl;
+  let temperature = Math.round(props.weatherData.temperature);
+  let humidity = Math.round(props.weatherData.humidity);
+  let feelsLike = Math.round(props.weatherData.feelsLike);
+  let wind = Math.round(props.weatherData.wind);
+  let timeStamp = props.weatherData.date;
+  let dateInfo = new Date(timeStamp * 1000);
+  let time = moment(dateInfo).format('dddd MMM Do, h:mm a');
+ 
   return (
     <div className="WeatherInfo">
       <div className="container grid">
@@ -12,25 +24,25 @@ export default function WeatherInfo() {
               {" "}
               <img
                 className="icon img-fluid"
-                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                alt="Sunny Icon"
+                src={iconUrl}
+                alt= {conditions}
               />{" "}
             </span>
-            <span className="current-temp">3</span>
+            <span className="current-temp">{temperature}</span>
             <span className="degree-unit">°C</span>
             <span className="weather-data">
               <ul>
-                <li>Precipitation: 0%</li>
-                <li>Humidity: 46%</li>
-                <li>Wind: 27 km/h</li>
+                <li>Feels Like: {feelsLike}%</li>
+                <li>Humidity: {humidity}%</li>
+                <li>Wind: {wind} km/h</li>
               </ul>
             </span>
           </div>
           <div className="location-time-description col-md">
             <ul>
-              <li className="city">Vancouver</li>
-              <li>Monday, 2:00pm</li>
-              <li>Sunny</li>
+              <li className="city">{city}</li>
+              <li>{time}</li>
+              <li>{conditions}</li>
             </ul>
           </div>
         </div>

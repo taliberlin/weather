@@ -29,7 +29,7 @@ if (loaded) {
     <div className="Forecast">
       <div className="row">
         {forecastData.map((dailyForecast, index) => {
-          if (index < 6) {
+          if (index < 7 && index > 0) {
           return (   
           <div key={index} className="col">
             <ForecastDay forecast={dailyForecast} />

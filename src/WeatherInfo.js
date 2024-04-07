@@ -13,7 +13,7 @@ export default function WeatherInfo(props) {
   let wind = Math.round(props.weatherData.wind);
   let timeStamp = props.weatherData.date;
   let dateInfo = new Date(timeStamp * 1000);
-  let time = moment(dateInfo).format('dddd MMM Do, h:mm a');
+  let time = moment(dateInfo).format('dddd, h:mma');
  
   return (
     <div className="WeatherInfo">
@@ -41,8 +41,10 @@ export default function WeatherInfo(props) {
           <div className="location-time-description col-md">
             <ul>
               <li className="city">{city}</li>
+          
+              <li className="conditions">{conditions}</li>
+              <li>Last updated:</li>
               <li>{time}</li>
-              <li>{conditions}</li>
             </ul>
           </div>
         </div>

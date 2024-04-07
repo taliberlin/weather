@@ -1,10 +1,10 @@
 .App {
-  max-width: 60%;
+  max-width: 50%;
 }
 .App header {
   font-size: 35px;
-  margin-top: 60px;
-  margin-bottom: 28px;
+  margin-top: 80px;
+  margin-bottom: 50px;
 }
 .App footer {
   font-size: 12px;

@@ -5,7 +5,7 @@ import "./app.css";
 function App() {
   return (
     <div className="App container">
-      <header className="text-center">Weather</header>
+      <header className="text-center">I wonder about the weather...</header>
       <main>
         <SearchBar />
       </main>

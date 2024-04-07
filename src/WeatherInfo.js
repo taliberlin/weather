@@ -5,7 +5,7 @@ import moment from "moment";
 
 export default function WeatherInfo(props) {
   let city = props.weatherData.city;
-  let conditions = props.weatherData.conditions;
+  let conditions = props.weatherData.conditions.slice(0,1).toUpperCase() + props.weatherData.conditions.slice(1, props.weatherData.conditions.length);
   let iconUrl = props.weatherData.iconUrl;
   let temperature = Math.round(props.weatherData.temperature);
   let humidity = Math.round(props.weatherData.humidity);
@@ -46,7 +46,7 @@ export default function WeatherInfo(props) {
             </ul>
           </div>
         </div>
-        <Forecast />
+        <Forecast city={city} />
       </div>
     </div>
   );

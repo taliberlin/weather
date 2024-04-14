@@ -19,3 +19,31 @@
   box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.3);
   background-color: rgba(255, 255, 255, 0.589);
 }
+
+@media (max-width: 1200px) {
+  .SearchBar .search {
+    width: 65%;
+    padding: 9px;
+    font-size: 13px;
+  }
+  .SearchBar .submit {
+    margin-left: 10px;
+    padding: 9px 12px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 600px) {
+  .SearchBar form {
+    margin-bottom: 35px;
+  }
+  .SearchBar .search {
+    width: 70%;
+    padding: 8px;
+    font-size: 12px;
+  }
+  .SearchBar .submit {
+    margin-left: 10px;
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}

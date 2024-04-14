@@ -62,3 +62,81 @@
   margin-bottom: 5px;
   margin-top: 5px;
 }
+
+@media (max-width: 1200px) {
+  .WeatherInfo {
+    max-width: 100%;
+    padding: 30px 20px;
+  }
+  .WeatherInfo .temp-precip-humid-wind {
+    right: 20px;
+    top: 17px;
+  }
+  .WeatherInfo .icon {
+    width: 75px;
+    bottom: 14px;
+    left: 4px;
+  }
+  .WeatherInfo .current-temp {
+    font-size: 45px;
+    margin-right: 4px;
+  }
+  .WeatherInfo .degree-unit {
+    font-size: 17px;
+  }
+  .WeatherInfo .weather-data {
+    font-size: 11px;
+    margin-left: 12px;
+  }
+  .WeatherInfo .location-time-description {
+    font-size: 11px;
+    right: 7px;
+  }
+  .WeatherInfo .city {
+    font-size: 28px;
+    margin-bottom: 3px;
+  }
+  .WeatherInfo .conditions {
+    font-size: 15px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+  }
+}
+@media (max-width: 600px) {
+  .WeatherInfo {
+    padding: 20px 15px;
+  }
+  .WeatherInfo .temp-precip-humid-wind {
+    right: 25px;
+  }
+  .WeatherInfo .icon {
+    width: 60px;
+    bottom: 15px;
+    left: 4px;
+  }
+  .WeatherInfo .current-temp {
+    font-size: 30px;
+    margin-right: 2px;
+  }
+  .WeatherInfo .degree-unit {
+    font-size: 13px;
+  }
+  .WeatherInfo .weather-data {
+    font-size: 9px;
+    margin-left: 8px;
+    line-height: 1.4;
+  }
+  .WeatherInfo .location-time-description {
+    font-size: 9px;
+    right: 7px;
+  }
+  .WeatherInfo .city {
+    font-size: 22px;
+    margin-bottom: 3px;
+  }
+  .WeatherInfo .conditions {
+    font-size: 11px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+  }
+}

@@ -20,3 +20,35 @@
   margin-left: 8px;
   color: rgb(104, 103, 103);
 }
+
+@media (max-width: 1200px) {
+  .Forecast {
+    margin-top: 35px;
+  }
+  .Forecast .forecast-day {
+    font-size: 11px;
+  }
+  .Forecast .forecast-icon {
+    width: 40px;
+  }
+  .Forecast .high-low {
+    font-size: 11px;
+  }
+  .Forecast .low {
+    margin-left: 5px;
+  }
+}
+@media (max-width: 600px) {
+  .Forecast {
+    margin-top: 25px;
+  }
+  .Forecast .forecast-day {
+    font-size: 9px;
+  }
+  .Forecast .forecast-icon {
+    width: 30px;
+  }
+  .Forecast .high-low {
+    font-size: 9px;
+  }
+}

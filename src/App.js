@@ -9,7 +9,7 @@ function App() {
       <main>
         <SearchBar />
       </main>
-      <footer className="text-center mt-3">
+      <footer className="text-center mt-5">
         This website was coded by{" "}
         <a
           href="https://peppy-starburst-3356e6.netlify.app/"
@@ -24,7 +24,7 @@ function App() {
           target="_blank"
           rel="noreferrer"
         >
-          GitHub ✌️
+          GitHub
         </a>
       </footer>
     </div>
